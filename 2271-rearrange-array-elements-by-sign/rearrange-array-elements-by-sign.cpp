@@ -12,13 +12,18 @@ public:
                 arr2.push_back(nums[i]);
             }
         }
-        for(int i=0;i<n;i++){
+        /*for(int i=0;i<n;i++){
             nums.pop_back();
         }
         for(int i=0;i<(n/2); i++){
             nums.push_back(arr1[i]);
             nums.push_back(arr2[i]);
+        }*/
+        for(int i = 0; i<(n/2);i++){
+            nums[2*i]=arr1[i];
+            nums[2*i+1]=arr2[i];
         }
+
         return nums;
     }
 };
